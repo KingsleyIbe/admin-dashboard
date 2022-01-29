@@ -207,3 +207,78 @@ body {
   top: 0;
   left: 0;
 }
+
+.cards-section {
+  width: 70%;
+}
+
+.cards-section .cardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  left: 300px;
+  top: 80px;
+  gap: 10px;
+}
+
+.cardBox .card {
+  position: relative;
+  background-color: var(--whiteColor);
+  padding: 30px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.cardBox .card .numbers {
+  position: relative;
+  color: var(--blueColor);
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+.cardBox .card .cardName {
+  color: var(--blackColor2);
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.cardBox .card .iconBox {
+  font-size: 3.5em;
+  color: var(--blackColor2);
+  margin-left: 30px;
+}
+
+.cardBox .card:hover {
+  background-color: var(--blueColor);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBox {
+  color: var(--whiteColor);
+}
+
+.details {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  left: 300px;
+  top: 80px;
+}
+
+.details .recentOrders {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  background-color: var(--whiteColor);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+}
