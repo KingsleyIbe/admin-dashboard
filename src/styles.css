@@ -47,6 +47,8 @@ body {
 }
 
 .navigation ul li {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   position: relative;
   width: 200%;
   list-style: none;
@@ -73,11 +75,51 @@ body {
   color: var(--blueColor);
 }
 
+.navigation ul li:hover a::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10 var(--whiteColor);
+  pointer-events: none;
+}
+
+.navigation ul li:hover a::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 35px 35px 0 10 var(--whiteColor);
+  pointer-events: none;
+}
+
 .icon {
   display: block;
   position: relative;
   text-align: center;
   min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+}
+
+.ion-icon {
+  font-size: 1.8em;
+}
+
+.title {
+  padding: 0 10px;
+  text-align: start;
+  white-space: nowrap;
+  display: block;
+  position: relative;
   height: 60px;
   line-height: 60px;
 }
