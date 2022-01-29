@@ -269,7 +269,6 @@ body {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
   left: 300px;
   top: 80px;
 }
@@ -281,4 +280,104 @@ body {
   background-color: var(--whiteColor);
   padding: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardHeader h2 {
+  font-weight: 600;
+  color: var(--blueColor);
+}
+
+.btn {
+  position: relative;
+  padding: 5px 10px;
+  background-color: var(--blueColor);
+  text-decoration: none;
+  color: var(--whiteColor);
+  border-radius: 6px;
+}
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details table thead td {
+  font-weight: 600;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eef0f1;
+}
+
+.details .recentOrders table tr {
+  color: var(--blackColor1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentOrders table tr:last-child {
+  border-bottom: none;
+}
+
+.details .recentOrders table tr:hover {
+  background-color: var(--blueColor);
+  color: var(--whiteColor);
+}
+
+.details .recentOrders table tr td {
+  padding: 0;
+}
+
+.details .recentOrders table tr td:last-child {
+  text-align: end;
+}
+
+.details .recentOrders table tr td:nth-child(2) {
+  text-align: center;
+}
+
+.details .recentOrders table tr td:nth-child(3) {
+  text-align: center;
+}
+
+.delivered {
+  padding: 2px 4px;
+  background-color: var(--redColor);
+  color: var(--whiteColor);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forgotten {
+  padding: 2px 4px;
+  background-color: black;
+  color: var(--whiteColor);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pending {
+  padding: 2px 4px;
+  background-color: blue;
+  color: var(--whiteColor);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.returned {
+  padding: 2px 4px;
+  background-color: green;
+  color: var(--whiteColor);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
 }
