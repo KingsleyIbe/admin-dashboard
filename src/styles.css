@@ -102,6 +102,10 @@ body {
   pointer-events: none;
 }
 
+.navigation.active {
+  width: 60px;
+}
+
 .icon {
   display: block;
   position: relative;
@@ -132,6 +136,11 @@ body {
   min-height: 100vh;
   background-color: var(--whiteColor);
   transition: 0.5s;
+}
+
+.main.active {
+  width: calc(100% - 80px);
+  left: 80px;
 }
 
 .topbar {
