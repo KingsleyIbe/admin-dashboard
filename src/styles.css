@@ -11,7 +11,7 @@
 /* Varibles */
 
 :root {
-  --blueColor: #287bff;
+  --blueColor: #17a2b8;
   --whiteColor: #fff;
   --grayColor: #f5f5f5;
   --blackColor1: #222;
@@ -42,7 +42,7 @@ body {
   width: 300px;
   height: 100%;
   background-color: var(--blueColor);
-  border-left: 10px solid var(--redColor);
+  border-left: 10px solid #073d3d;
   transition: 0.5s;
   overflow: hidden;
 }
@@ -60,6 +60,7 @@ body {
   position: relative;
   width: 200%;
   list-style: none;
+  cursor: pointer;
 }
 
 .navigation ul li:hover {
@@ -280,7 +281,7 @@ body {
   top: 80px;
 }
 
-.details .recentOrders {
+.details .newPrograms {
   position: relative;
   display: grid;
   min-height: 500px;
@@ -323,62 +324,62 @@ tbody tr:nth-child(odd) {
   background: #eef0f1;
 }
 
-.recentCustomers table tr:hover {
+.instructors table tr:hover {
   background-color: var(--blueColor);
   color: var(--whiteColor);
 }
 
-.recentCustomers table tr h4 span {
+.instructors table tr h4 span {
   font-size: 14px;
   color: var(--blackColor2);
 }
 
-.recentCustomers table tr:hover td h4 span {
+.instructors table tr:hover td h4 span {
   background-color: var(--blueColor);
   color: var(--whiteColor);
 }
 
-.details .recentOrders table tr {
+.details .newPrograms table tr {
   color: var(--blackColor1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.details .recentOrders table tr:last-child {
+.details .newPrograms table tr:last-child {
   border-bottom: none;
 }
 
-.details .recentOrders table tr:hover {
+.details .newPrograms table tr:hover {
   background-color: var(--blueColor);
   color: var(--whiteColor);
 }
 
-.recentCustomers table tr td {
+.instructors table tr td {
   padding: 12px 10px;
 }
 
-.recentCustomers table tr h4 {
+.instructors table tr h4 {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2em;
 }
 
-.details .recentOrders table tr td {
+.details .newPrograms table tr td {
   padding: 0;
 }
 
-.details .recentOrders table tr td:last-child {
+.details .newPrograms table tr td:last-child {
   text-align: end;
 }
 
-.details .recentOrders table tr td:nth-child(2) {
+.details .newPrograms table tr td:nth-child(2) {
   text-align: center;
 }
 
-.details .recentOrders table tr td:nth-child(3) {
+.details .newPrograms table tr td:nth-child(3) {
   text-align: center;
 }
 
-.delivered {
+.jan {
   padding: 2px 4px;
   background-color: var(--redColor);
   color: var(--whiteColor);
@@ -387,7 +388,7 @@ tbody tr:nth-child(odd) {
   font-weight: 500;
 }
 
-.forgotten {
+.aug {
   padding: 2px 4px;
   background-color: black;
   color: var(--whiteColor);
@@ -396,7 +397,7 @@ tbody tr:nth-child(odd) {
   font-weight: 500;
 }
 
-.pending {
+.sept {
   padding: 2px 4px;
   background-color: blue;
   color: var(--whiteColor);
@@ -405,7 +406,7 @@ tbody tr:nth-child(odd) {
   font-weight: 500;
 }
 
-.returned {
+.july {
   padding: 2px 4px;
   background-color: green;
   color: var(--whiteColor);
@@ -414,7 +415,7 @@ tbody tr:nth-child(odd) {
   font-weight: 500;
 }
 
-.recentCustomers {
+.instructors {
   position: relative;
   display: grid;
   min-height: 500px;
@@ -424,7 +425,7 @@ tbody tr:nth-child(odd) {
   background-color: var(--whiteColor);
 }
 
-.recentCustomers .imgBox {
+.instructors .imgBox {
   position: relative;
   width: 60px;
   height: 60px;
@@ -432,7 +433,7 @@ tbody tr:nth-child(odd) {
   overflow: hidden;
 }
 
-.recentCustomers .imgBox img {
+.instructors .imgBox img {
   position: relative;
   top: 0;
   left: 0;
@@ -471,7 +472,7 @@ tbody tr:nth-child(odd) {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .recentOrders {
+  .newPrograms {
     overflow-x: auto;
   }
 
