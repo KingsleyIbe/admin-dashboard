@@ -216,11 +216,7 @@ body {
   left: 0;
 }
 
-.cards-section {
-  width: 70%;
-}
-
-.cards-section .cardBox {
+.cardBox {
   position: relative;
   width: 100%;
   padding: 20px;
