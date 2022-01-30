@@ -1,143 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <nav>
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="https://harde.ng/">
-            <span class="icon">
-              <img src="./images/logo.png" class="ion-icon logo" alt="Harde logo">
-            </img>
-          </span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon class="ion-icon" name="home-outline"></ion-icon></span>
-            <span class="title">Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon class="ion-icon" name="people-outline"></ion-icon></span>
-            <span class="title">Career Coach</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon class="ion-icon" name="chatbox-ellipses-outline"></ion-icon></span>
-            <span class="title">Message</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://harde.ng/why-harde">
-            <span class="icon"><ion-icon class="ion-icon" name="help-circle-outline"></ion-icon></span>
-            <span class="title">Help</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon class="ion-icon" name="cog-outline"></ion-icon></span>
-            <span class="title">Settings</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon class="ion-icon" name="lock-closed-outline"></ion-icon></span>
-            <span class="title">Password</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://harde.ng/login">
-            <span class="icon"><ion-icon class="ion-icon" name="log-out-outline"></ion-icon></span>
-            <span class="title">Sign out</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span class="icon"><ion-icon class="ion-icon" name="document-text-outline"></ion-icon></span>
-            <span class="title">Provide Feedback</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-    <section class="header-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="https://harde.ng/">
+                <span class="icon">
+                  <img
+                    src="./images/logo.png"
+                    class="ion-icon logo"
+                    alt="Harde logo"
+                  />
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon class="ion-icon" name="home-outline"></ion-icon
+                ></span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon class="ion-icon" name="people-outline"></ion-icon
+                ></span>
+                <span class="title">Career Coach</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon
+                    class="ion-icon"
+                    name="chatbox-ellipses-outline"
+                  ></ion-icon
+                ></span>
+                <span class="title">Message</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://harde.ng/why-harde">
+                <span class="icon"
+                  ><ion-icon
+                    class="ion-icon"
+                    name="help-circle-outline"
+                  ></ion-icon
+                ></span>
+                <span class="title">Help</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon class="ion-icon" name="cog-outline"></ion-icon
+                ></span>
+                <span class="title">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon
+                    class="ion-icon"
+                    name="lock-closed-outline"
+                  ></ion-icon
+                ></span>
+                <span class="title">Password</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://harde.ng/login">
+                <span class="icon"
+                  ><ion-icon class="ion-icon" name="log-out-outline"></ion-icon
+                ></span>
+                <span class="title">Sign out</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon"
+                  ><ion-icon
+                    class="ion-icon"
+                    name="document-text-outline"
+                  ></ion-icon
+                ></span>
+                <span class="title">Provide Feedback</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="main">
         <div class="topbar">
           <div class="toggle">
             <ion-icon name="menu-outline"></ion-icon>
           </div>
           <div class="search">
-            <label for="search">
-              <input type="text" placeholder="Search...">
+            <label>
+              <input type="text" placeholder="Search..." />
               <ion-icon class="search-icon" name="search-outline"></ion-icon>
             </label>
           </div>
           <div class="user">
-            <img class="user-img" src="./images/user.png">
+            <img class="user-img" src="./images/user.png" alt="User photo" />
           </div>
         </div>
-    </section>
 
-    <section class="cards-section">
-      <div class="cardBox">
-        <div class="card">
-          <div>
-            <div class="numbers">11,234</div>
-            <div class="cardName">Students' Enrolled</div>
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">11,234</div>
+              <div class="cardName">Students' Enrolled</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
           </div>
-          <div class="iconBox">
-            <ion-icon name="people-outline"></ion-icon>
+          <div class="card">
+            <div>
+              <div class="numbers">5,678</div>
+              <div class="cardName">Courses</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">9,1011</div>
+              <div class="cardName">Graduates</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">70</div>
+              <div class="cardName">Countries</div>
+            </div>
+            <div class="iconBox">
+              <ion-icon name="flag-outline"></ion-icon>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div>
-            <div class="numbers">5,678</div>
-            <div class="cardName">Courses</div>
-          </div>
-          <div class="iconBox">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </div>
-        </div>
-        <div class="card">
-          <div>
-            <div class="numbers">9,1011</div>
-            <div class="cardName">Graduates</div>
-          </div>
-          <div class="iconBox">
-            <ion-icon name="school-outline"></ion-icon>
-          </div>
-        </div>
-        <div class="card">
-          <div>
-            <div class="numbers">70</div>
-            <div class="cardName">Countries</div>
-          </div>
-          <div class="iconBox">
-            <ion-icon name="flag-outline"></ion-icon>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="dataList">
-      <div class="details">
-        <div class="newPrograms">
-          <div class="cardHeader">
-            <h2>New Programs</h2>
-            <a href="https://harde.ng/program/mba" class="btn">View All</a>
-          </div>
+        <div class="details">
+          <div class="newPrograms">
+            <div class="cardHeader">
+              <h2>New Programs</h2>
+              <a href="https://harde.ng/program/mba" class="btn">View All</a>
+            </div>
             <table>
               <thead>
                 <tr>
@@ -198,41 +222,65 @@
                 </tr>
               </tbody>
             </table>
-        </div>
-        <div class="instructors">
-          <diV class="cardHeader">
-            <h2>Meet Your Instructors</h2>
-          </diV>
-          <table>
-            <tr>
-              <td width="60px"><div class="imgBox"><img src="./images/user-2.png"></div></td>
-              <td><h4>David<br><span>Italy</span></h4></td>
-            </tr>
-            <tr>
-              <td width="60px"><div class="imgBox"><img src="./images/user.png"></div></td>
-              <td><h4>Kingsley<br><span>USA</span></h4></td>
-            </tr>
-            <tr>
-              <td width="60px"><div class="imgBox"><img src="./images/user-2.png"></div></td>
-              <td><h4>Lee<br><span>Nigeria</span></h4></td>
-            </tr>
-            <tr>
-              <td width="60px"><div class="imgBox"><img src="./images/user.png"></div></td>
-              <td><h4>Shady<br><span>Egypt</span></h4></td>
-            </tr>
-            <tr>
-              <td width="60px"><div class="imgBox"><img src="./images/user-2.png"></div></td>
-              <td><h4>Ritta<br><span>Canada</span></h4></td>
-            </tr>
-          </table>
+          </div>
+          <div class="instructors">
+            <div class="cardHeader">
+              <h2>Meet Your Instructors</h2>
+            </div>
+            <table>
+              <tr>
+                <td>
+                  <div class="imgBox"><img src="./images/user-2.png" alt="User photo"/></div>
+                </td>
+                <td>
+                  <h4>David<br /><span>Italy</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgBox"><img src="./images/user.png" alt="User photo" /></div>
+                </td>
+                <td>
+                  <h4>Kingsley<br /><span>USA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgBox"><img src="./images/user-2.png" /></div>
+                </td>
+                <td>
+                  <h4>Lee<br /><span>Nigeria</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgBox"><img src="./images/user.png" /></div>
+                </td>
+                <td>
+                  <h4>Shady<br /><span>Egypt</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="imgBox"><img src="./images/user-2.png" /></div>
+                </td>
+                <td>
+                  <h4>Ritta<br /><span>Canada</span></h4>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-    </section>
-  </main>
-</div>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="index.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
