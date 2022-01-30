@@ -111,7 +111,7 @@ body {
 }
 
 .navigation.active {
-  width: 60px;
+  width: 80px;
 }
 
 .icon {
@@ -217,7 +217,6 @@ body {
 }
 
 .cardBox {
-  position: relative;
   width: 100%;
   padding: 20px;
   display: grid;
@@ -268,7 +267,6 @@ body {
 }
 
 .details {
-  position: relative;
   width: 100%;
   padding: 20px;
   display: grid;
@@ -278,7 +276,6 @@ body {
 }
 
 .details .newPrograms {
-  position: relative;
   display: grid;
   min-height: 500px;
   background-color: var(--whiteColor);
