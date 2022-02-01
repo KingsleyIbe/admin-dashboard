@@ -4,7 +4,7 @@
 
 ![screenshot](./src/images/screenShot.jpeg)
 
-### The Admin Dashboard displays students' infomation on the program. Users will have access to important information such as new or additional courses, institution's statistics, help links and others.
+### The Admin Dashboard displays students' information on the program. Users will have access to important information such as new or additional courses, institution statistics, help links, and others.
 
 ## Built With
 
