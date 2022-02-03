@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="https://i.postimg.cc/KvgFMN55/screen-Shot.jpg">
+    <meta property="og:image" content="https://i.postimg.cc/rp5qqJgj/screen-Shot.jpg">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Admin Dashboard</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -13,7 +13,7 @@
     <div class="container">
       <nav>
         <div class="navigation">
-          <ul class="myUl">
+          <ul class="my-ul">
             <li>
               <a href="https://harde.ng/">
                 <span class="icon">
@@ -115,52 +115,71 @@
               <ion-icon class="search-icon" name="search-outline"></ion-icon>
             </label>
           </div>
-          <div class="user">
-            <img class="user-img" src="./images/user.png" alt="User photo" />
+          <div class="user-container">
+            <ul class="user d-flex flex-row">
+              <li>
+                <a href="#">
+                  <ion-icon name="notifications-outline" class="ion-icon-n"></ion-icon>
+                  <span class="badge-1">2</span>
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                  <ion-icon name="chatbox-outline" class="ion-icon-c"></ion-icon>
+                  <span class="badge-2">7</span>
+                </a>
+              </li>
+              <li>
+                <img class="user-img" src="./images/user.png" alt="User photo" />
+              </li>
+              <li>
+                <p>Hello, James</p>
+              </li>
           </div>
+        </ul>
         </div>
 
-        <div class="cardBox">
+        <div class="card-box">
           <div class="card">
             <div>
               <div class="numbers">11,234</div>
-              <div class="cardName">Students' Enrolled</div>
+              <div class="card-name">Students' Enrolled</div>
             </div>
-            <div class="iconBox">
+            <div class="icon-box">
               <ion-icon name="people-outline"></ion-icon>
             </div>
           </div>
           <div class="card">
             <div>
               <div class="numbers">5,678</div>
-              <div class="cardName">Courses</div>
+              <div class="card-name">Courses</div>
             </div>
-            <div class="iconBox">
+            <div class="icon-box">
               <ion-icon name="logo-youtube"></ion-icon>
             </div>
           </div>
           <div class="card">
             <div>
               <div class="numbers">9,1011</div>
-              <div class="cardName">Graduates</div>
+              <div class="card-name">Graduates</div>
             </div>
-            <div class="iconBox">
+            <div class="icon-box">
               <ion-icon name="school-outline"></ion-icon>
             </div>
           </div>
           <div class="card">
             <div>
               <div class="numbers">70</div>
-              <div class="cardName">Countries</div>
+              <div class="card-name">Countries</div>
             </div>
-            <div class="iconBox">
+            <div class="icon-box">
               <ion-icon name="flag-outline"></ion-icon>
             </div>
           </div>
         </div>
         <div class="details">
-          <div class="newPrograms">
-            <div class="cardHeader">
+          <div class="new-programs">
+            <div class="card-header">
               <h2>New Programs</h2>
               <a href="https://harde.ng/program/mba" class="btn">View All</a>
             </div>
@@ -226,13 +245,13 @@
             </table>
           </div>
           <div class="instructors">
-            <div class="cardHeader">
+            <div class="card-header">
               <h2>Meet Your Instructors</h2>
             </div>
             <table>
               <tr>
                 <td>
-                  <div class="imgBox"><img src="./images/user-2.png" alt="User photo"/></div>
+                  <div class="img-box"><img src="./images/user-2.png" alt="User photo"/></div>
                 </td>
                 <td>
                   <h4>David<br /><span>Italy</span></h4>
@@ -240,7 +259,7 @@
               </tr>
               <tr>
                 <td>
-                  <div class="imgBox"><img src="./images/user.png" alt="User photo" /></div>
+                  <div class="img-box"><img src="./images/user.png" alt="User photo" /></div>
                 </td>
                 <td>
                   <h4>Kingsley<br /><span>USA</span></h4>
@@ -248,7 +267,7 @@
               </tr>
               <tr>
                 <td>
-                  <div class="imgBox"><img src="./images/user-2.png" alt="User photo" /></div>
+                  <div class="img-box"><img src="./images/user-2.png" alt="User photo" /></div>
                 </td>
                 <td>
                   <h4>Lee<br /><span>Nigeria</span></h4>
@@ -256,7 +275,7 @@
               </tr>
               <tr>
                 <td>
-                  <div class="imgBox"><img src="./images/user.png" alt="User photo"/></div>
+                  <div class="img-box"><img src="./images/user.png" alt="User photo"/></div>
                 </td>
                 <td>
                   <h4>Shady<br /><span>Egypt</span></h4>
@@ -264,13 +283,68 @@
               </tr>
               <tr>
                 <td>
-                  <div class="imgBox"><img src="./images/user-2.png" alt="User photo"/></div>
+                  <div class="img-box"><img src="./images/user-2.png" alt="User photo"/></div>
                 </td>
                 <td>
                   <h4>Ritta<br /><span>Canada</span></h4>
                 </td>
               </tr>
             </table>
+          </div>
+          <div class="recent-activities">
+            <div class="header-r">
+              <h3>Recent Activities </h3>
+              <span> | </span>
+              <p>Today</p>
+            </div>
+            <ul class="activity-list">
+              <li class="list-1">
+                <p>30 min</p>
+                <p class="shape-1" style="background: green;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>38 min</p>
+                <p class="shape-1" style="background: red;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>50 min</p>
+                <p class="shape-1" style="background: blue;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>1 hour</p>
+                <p class="shape-1" style="background: cyan;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>4 hours</p>
+                <p class="shape-1" style="background: yellowgreen;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>2 days</p>
+                <p class="shape-1" style="background: purple;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>2 weeks</p>
+                <p class="shape-1" style="background: gray;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>last month</p>
+                <p class="shape-1" style="background: goldenrod;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              <li class="list-1">
+                <p>2 months</p>
+                <p class="shape-1" style="background: magenta;"></p>
+                <p>Quia quae rerum explicabo officiis beatae</p>
+              </li>
+              
+            </ul>
           </div>
         </div>
       </div>

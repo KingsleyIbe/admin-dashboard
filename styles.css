@@ -11,18 +11,26 @@
 /* Varibles */
 
 :root {
-  --blueColor: #17a2b8;
-  --whiteColor: #fff;
-  --grayColor: #f5f5f5;
-  --blackColor1: #222;
-  --blackColor2: #999;
-  --redColor: #f00;
-  --toggleBgColor: #ccc;
+  --blue-color: #17a2b8;
+  --white-color: #fff;
+  --gray-color: #f5f5f5;
+  --black-color1: #222;
+  --black-color2: #999;
+  --red-color: #f00;
+  --toggle-bg-color: #ccc;
 }
 
 body {
   min-height: 100vh;
   overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
@@ -41,7 +49,7 @@ body {
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: var(--blueColor);
+  background-color: var(--blue-color);
   border-left: 10px solid #073d3d;
   transition: 0.5s;
   overflow: hidden;
@@ -64,7 +72,7 @@ body {
 }
 
 .navigation ul li:hover {
-  background-color: var(--whiteColor);
+  background-color: var(--white-color);
 }
 
 .navigation ul li:nth-child(1) {
@@ -76,16 +84,16 @@ body {
   position: relative;
   width: 100%;
   display: flex;
-  color: var(--whiteColor);
+  color: var(--white-color);
   text-decoration: none;
 }
 
 .navigation ul li a:hover {
-  color: var(--blueColor);
+  color: var(--blue-color);
 }
 
 .navigation ul li:hover a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50px;
   right: 0;
@@ -93,12 +101,12 @@ body {
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 35px 35px 0 10 var(--whiteColor);
+  box-shadow: 35px 35px 0 10 var(--white-color);
   pointer-events: none;
 }
 
 .navigation ul li:hover a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -50px;
   right: 0;
@@ -106,7 +114,7 @@ body {
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 35px 35px 0 10 var(--whiteColor);
+  box-shadow: 35px 35px 0 10 var(--white-color);
   pointer-events: none;
 }
 
@@ -142,8 +150,9 @@ body {
   width: calc(100% - 300px);
   left: 300px;
   min-height: 100vh;
-  background-color: var(--whiteColor);
+  background-color: var(--white-color);
   transition: 0.5s;
+  margin-top: 40px;
 }
 
 .main.active {
@@ -152,7 +161,8 @@ body {
 }
 
 .topbar {
-  width: 100%;
+  position: relative;
+  width: 60%;
   height: 60px;
   display: flex;
   justify-content: space-around;
@@ -173,6 +183,7 @@ body {
 
 .search {
   position: relative;
+  left: 400px;
   width: 400px;
   margin: 0 10px;
 }
@@ -182,14 +193,14 @@ body {
   width: 100%;
 }
 
-.search label input[type=text] {
+.search label input {
   width: 100%;
   height: 40px;
   border-radius: 40px;
   padding: 5px 20px;
   padding-left: 35px;
   outline: none;
-  border: 1px solid var(--blackColor2);
+  border: 1px solid var(--black-color2);
 }
 
 .search-icon {
@@ -199,24 +210,54 @@ body {
   font-size: 1.2em;
 }
 
-.user {
+.user-container {
   position: relative;
-  min-width: 40px;
-  height: 40px;
+  left: 650px;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-right: 40px;
+}
+
+.user .badge-1,
+.badge-2 {
+  position: relative;
+  left: -20px;
+  top: 15px;
+  padding: 5px 10px;
   border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  vertical-align: top;
+}
+
+.badge-2 {
+  background-color: #1c7c1c;
+}
+
+.ion-icon-n,
+.ion-icon-c {
+  font-size: 2.2em;
+  margin-top: 20px;
+}
+
+.user p {
+  font-size: 1.3em;
+  margin-top: 30px;
 }
 
 .user-img {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 0;
-  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
-.cardBox {
+.card-box {
   width: 100%;
   padding: 20px;
   display: grid;
@@ -226,81 +267,81 @@ body {
   gap: 10px;
 }
 
-.cardBox .card {
+.card-box .card {
   position: relative;
-  background-color: var(--whiteColor);
+  background-color: var(--white-color);
   padding: 30px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
 }
 
-.cardBox .card .numbers {
+.card-box .card .numbers {
   position: relative;
-  color: var(--blueColor);
+  color: var(--blue-color);
   font-weight: 500;
   font-size: 2.5em;
 }
 
-.cardBox .card .cardName {
-  color: var(--blackColor2);
+.card-box .card .card-name {
+  color: var(--black-color2);
   font-size: 1.1em;
   margin-top: 5px;
 }
 
-.cardBox .card .iconBox {
+.card-box .card .icon-box {
   font-size: 3.5em;
-  color: var(--blackColor2);
+  color: var(--black-color2);
   margin-left: 30px;
 }
 
-.cardBox .card:hover {
-  background-color: var(--blueColor);
+.card-box .card:hover {
+  background-color: var(--blue-color);
 }
 
-.cardBox .card:hover .numbers,
-.cardBox .card:hover .cardName,
-.cardBox .card:hover .iconBox {
-  color: var(--whiteColor);
+.card-box .card:hover .numbers,
+.card-box .card:hover .card-name,
+.card-box .card:hover .icon-box {
+  color: var(--white-color);
 }
 
 .details {
-  width: 100%;
+  width: 99%;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   left: 300px;
   top: 80px;
 }
 
-.details .newPrograms {
+.details .new-programs {
   display: grid;
   min-height: 500px;
-  background-color: var(--whiteColor);
+  background-color: var(--white-color);
   padding: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
   border-radius: 20px;
 }
 
-.cardHeader {
+.card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.cardHeader h2 {
+.card-header h2 {
   font-weight: 600;
-  color: var(--blueColor);
+  color: var(--blue-color);
 }
 
 .btn {
   position: relative;
   padding: 5px 10px;
-  background-color: var(--blueColor);
+  background-color: var(--blue-color);
   text-decoration: none;
-  color: var(--whiteColor);
+  color: var(--white-color);
   border-radius: 6px;
 }
 
@@ -318,32 +359,36 @@ tbody tr:nth-child(odd) {
 }
 
 .instructors table tr:hover {
-  background-color: var(--blueColor);
-  color: var(--whiteColor);
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.header-r span {
+  margin-top: 7px;
 }
 
 .instructors table tr h4 span {
   font-size: 14px;
-  color: var(--blackColor2);
+  color: var(--black-color2);
 }
 
 .instructors table tr:hover td h4 span {
-  background-color: var(--blueColor);
-  color: var(--whiteColor);
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
-.details .newPrograms table tr {
-  color: var(--blackColor1);
+.details .new-programs table tr {
+  color: var(--black-color1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.details .newPrograms table tr:last-child {
+.details .new-programs table tr:last-child {
   border-bottom: none;
 }
 
-.details .newPrograms table tr:hover {
-  background-color: var(--blueColor);
-  color: var(--whiteColor);
+.details .new-programs table tr:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 .instructors table tr td {
@@ -356,26 +401,26 @@ tbody tr:nth-child(odd) {
   line-height: 1.2em;
 }
 
-.details .newPrograms table tr td {
+.details .new-programs table tr td {
   padding: 0;
 }
 
-.details .newPrograms table tr td:last-child {
+.details .new-programs table tr td:last-child {
   text-align: end;
 }
 
-.details .newPrograms table tr td:nth-child(2) {
+.details .new-programs table tr td:nth-child(2) {
   text-align: center;
 }
 
-.details .newPrograms table tr td:nth-child(3) {
+.details .new-programs table tr td:nth-child(3) {
   text-align: center;
 }
 
 .jan {
   padding: 2px 4px;
-  background-color: var(--redColor);
-  color: var(--whiteColor);
+  background-color: var(--red-color);
+  color: var(--white-color);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
@@ -384,7 +429,7 @@ tbody tr:nth-child(odd) {
 .aug {
   padding: 2px 4px;
   background-color: black;
-  color: var(--whiteColor);
+  color: var(--white-color);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
@@ -393,7 +438,7 @@ tbody tr:nth-child(odd) {
 .sept {
   padding: 2px 4px;
   background-color: blue;
-  color: var(--whiteColor);
+  color: var(--white-color);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
@@ -402,7 +447,7 @@ tbody tr:nth-child(odd) {
 .july {
   padding: 2px 4px;
   background-color: green;
-  color: var(--whiteColor);
+  color: var(--white-color);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
@@ -413,12 +458,13 @@ tbody tr:nth-child(odd) {
   display: grid;
   min-height: 500px;
   padding: 20px;
+  margin-left: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
   border-radius: 20px;
-  background-color: var(--whiteColor);
+  background-color: var(--white-color);
 }
 
-.instructors .imgBox {
+.instructors .img-box {
   position: relative;
   width: 60px;
   height: 60px;
@@ -426,13 +472,62 @@ tbody tr:nth-child(odd) {
   overflow: hidden;
 }
 
-.instructors .imgBox img {
+.instructors .img-box img {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.recent-activities {
+  width: 100%;
+  margin-left: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.header-r {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header-r h3 {
+  color: var(--blue-color);
+  font-size: 1.8em;
+}
+
+.header-r p {
+  color: var(--black-color2);
+  font-size: 1.2em;
+  margin-top: 7px;
+}
+
+.activity-list {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.list-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.list-1 p:first-child {
+  color: var(--black-color2);
+}
+
+.shape-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
 }
 
 /* Responsiveness */
@@ -455,7 +550,7 @@ tbody tr:nth-child(odd) {
     left: 300px;
   }
 
-  .cardBox {
+  .card-box {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -465,7 +560,7 @@ tbody tr:nth-child(odd) {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .newPrograms {
+  .new-programs {
     overflow-x: auto;
   }
 
@@ -475,11 +570,11 @@ tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 480px) {
-  .cardBox {
+  .card-box {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .cardHeader h2 {
+  .card-header h2 {
     font-size: 20px;
   }
 
@@ -503,7 +598,7 @@ tbody tr:nth-child(odd) {
   }
 
   .main.active .toggle {
-    color: var(--whiteColor);
+    color: var(--white-color);
     position: fixed;
     left: initial;
     right: 0;
