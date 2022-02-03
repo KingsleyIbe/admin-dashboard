@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 /* RESET */
 
 *,
@@ -163,7 +161,8 @@ li {
 }
 
 .topbar {
-  width: 100%;
+  position: relative;
+  width: 60%;
   height: 60px;
   display: flex;
   justify-content: space-around;
@@ -184,6 +183,7 @@ li {
 
 .search {
   position: relative;
+  left: 400px;
   width: 400px;
   margin: 0 10px;
 }
@@ -210,6 +210,11 @@ li {
   font-size: 1.2em;
 }
 
+.user-container {
+  position: relative;
+  left: 650px;
+}
+
 .user {
   width: 100%;
   display: flex;
@@ -220,7 +225,9 @@ li {
 
 .user .badge-1,
 .badge-2 {
-  position: absolute;
+  position: relative;
+  left: -20px;
+  top: 15px;
   padding: 5px 10px;
   border-radius: 50%;
   color: var(--white-color);
@@ -301,7 +308,7 @@ li {
 }
 
 .details {
-  width: 70%;
+  width: 99%;
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -354,6 +361,10 @@ tbody tr:nth-child(odd) {
 .instructors table tr:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
+}
+
+.header-r span {
+  margin-top: 7px;
 }
 
 .instructors table tr h4 span {
@@ -477,6 +488,46 @@ tbody tr:nth-child(odd) {
   padding: 20px;
   border-radius: 20px;
   height: 100%;
+}
+
+.header-r {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header-r h3 {
+  color: var(--blue-color);
+  font-size: 1.8em;
+}
+
+.header-r p {
+  color: var(--black-color2);
+  font-size: 1.2em;
+  margin-top: 7px;
+}
+
+.activity-list {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.list-1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.list-1 p:first-child {
+  color: var(--black-color2);
+}
+
+.shape-1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
 }
 
 /* Responsiveness */
