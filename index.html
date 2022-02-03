@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <meta property="og:image" content="https://i.postimg.cc/KvgFMN55/screen-Shot.jpg">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Admin Dashboard</title>
@@ -13,7 +14,7 @@
     <div class="container">
       <nav>
         <div class="navigation">
-          <ul class="myUl">
+          <ul class="my-ul">
             <li>
               <a href="https://harde.ng/">
                 <span class="icon">
@@ -115,9 +116,28 @@
               <ion-icon class="search-icon" name="search-outline"></ion-icon>
             </label>
           </div>
-          <div class="user">
-            <img class="user-img" src="./images/user.png" alt="User photo" />
+          <div >
+            <ul class="user d-flex flex-row">
+              <li>
+                <a href="#">
+                  <ion-icon name="notifications-outline" class="ion-icon-n"></ion-icon>
+                  <span class="badge-1">2</span>
+               </a>
+              </li>
+              <li>
+               <a href="#">
+                  <ion-icon name="chatbox-outline" class="ion-icon-c"></ion-icon>
+                  <span class="badge-2">7</span>
+                </a>
+              </li>
+              <li>
+                <img class="user-img" src="./images/user.png" alt="User photo" />
+              </li>
+              <li>
+                <p>Hello, James</p>
+              </li>
           </div>
+        </ul>
         </div>
 
         <div class="card-box">
@@ -271,6 +291,24 @@
                 </td>
               </tr>
             </table>
+          </div>
+          <div class="recent-activities">
+            <div class="header-r">
+              <h3>Recent Activities<p>Today</p></h3>
+            </div>
+            <ul>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+              <li>Completed course</li>
+            </ul>
           </div>
         </div>
       </div>
