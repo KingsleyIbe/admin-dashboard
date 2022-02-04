@@ -354,7 +354,7 @@ li {
   border-radius: 6px;
 }
 
-.details table {
+.details .instructors table {
   width: 100%;
   border-collapse: collapse;
 }
