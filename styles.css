@@ -1,3 +1,6 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Montserrat:wght@700&family=Roboto+Slab:wght@300;700&family=Roboto:wght@300&display=swap');
+
 /* RESET */
 
 *,
@@ -23,6 +26,7 @@
 body {
   min-height: 100vh;
   overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -53,6 +57,8 @@ li {
   border-left: 10px solid #073d3d;
   transition: 0.5s;
   overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .navigation ul {
@@ -153,6 +159,8 @@ li {
   background-color: var(--white-color);
   transition: 0.5s;
   margin-top: 40px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
 }
 
 .main.active {
@@ -248,6 +256,7 @@ li {
 .user p {
   font-size: 1.3em;
   margin-top: 30px;
+  font-weight: 300;
 }
 
 .user-img {
@@ -318,7 +327,7 @@ li {
 
 .details .new-programs {
   display: grid;
-  min-height: 500px;
+  min-height: 400px;
   background-color: var(--white-color);
   padding: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
@@ -368,8 +377,11 @@ tbody tr:nth-child(odd) {
 }
 
 .instructors table tr h4 span {
+  position: relative;
   font-size: 14px;
   color: var(--black-color2);
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 .instructors table tr:hover td h4 span {
@@ -454,9 +466,9 @@ tbody tr:nth-child(odd) {
 }
 
 .instructors {
-  position: relative;
+  /* position: relative; */
   display: grid;
-  min-height: 500px;
+  /* min-height: 500px; */
   padding: 20px;
   margin-left: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
@@ -505,6 +517,7 @@ tbody tr:nth-child(odd) {
   color: var(--black-color2);
   font-size: 1.2em;
   margin-top: 7px;
+  font-weight: 300;
 }
 
 .activity-list {
