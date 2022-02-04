@@ -1,5 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Montserrat:wght@700&family=Roboto+Slab:wght@300;700&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+P+One&family=Montserrat:wght@700&family=Roboto+Slab:wght@300;700&family=Roboto:wght@300&display=swap");
 
 /* RESET */
 
@@ -26,7 +26,7 @@
 body {
   min-height: 100vh;
   overflow-y: hidden;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 a {
@@ -57,7 +57,7 @@ li {
   border-left: 10px solid #073d3d;
   transition: 0.5s;
   overflow: hidden;
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
   font-weight: 300;
 }
 
@@ -280,7 +280,7 @@ li {
   position: relative;
   background-color: var(--white-color);
   padding: 30px;
-  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 25px 0 rgb(0 0 0 / 80%);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -330,7 +330,7 @@ li {
   min-height: 400px;
   background-color: var(--white-color);
   padding: 20px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 80%);
   border-radius: 20px;
 }
 
@@ -391,7 +391,7 @@ tbody tr:nth-child(odd) {
 
 .details .new-programs table tr {
   color: var(--black-color1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
 }
 
 .details .new-programs table tr:last-child {
@@ -466,12 +466,10 @@ tbody tr:nth-child(odd) {
 }
 
 .instructors {
-  /* position: relative; */
   display: grid;
-  /* min-height: 500px; */
   padding: 20px;
   margin-left: 20px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 80%);
   border-radius: 20px;
   background-color: var(--white-color);
 }
@@ -496,7 +494,7 @@ tbody tr:nth-child(odd) {
 .recent-activities {
   width: 100%;
   margin-left: 20px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 7px 25px rgb(0 0 0 / 80%);
   padding: 20px;
   border-radius: 20px;
   height: 100%;
