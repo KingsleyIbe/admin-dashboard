@@ -543,6 +543,42 @@ tbody tr:nth-child(odd) {
   margin: auto;
 }
 
+.shape-1-a {
+  background: #0f0;
+}
+
+.shape-1-b {
+  background: #f00;
+}
+
+.shape-1-c {
+  background: #00f;
+}
+
+.shape-1-d {
+  background: #0ff;
+}
+
+.shape-1-e {
+  background: #9acd32;
+}
+
+.shape-1-f {
+  background: #800080;
+}
+
+.shape-1-g {
+  background: #808080;
+}
+
+.shape-1-h {
+  background: #daa520;
+}
+
+.shape-1-i {
+  background: #f0f;
+}
+
 /* Responsiveness */
 @media (max-width: 991px) {
   .navigation {
